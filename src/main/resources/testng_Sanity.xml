@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- @author: Jayanta Kumar Panda-->
+
+<suite name="Sortly Application Test Automation Test Suite">
+	
+	<listeners>
+		<listener class-name="com.sortly.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	
+	<test name="Sortly App Login and Home Page Sanity Test">
+		<classes>
+			<class name="com.sortly.qa.testcases.LoginPageTest"></class>
+			<class name="com.sortly.qa.testcases.HomePageTest"></class>
+			
+		</classes>
+	</test>
+</suite>
