@@ -38,8 +38,7 @@ public class BaseTest {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"/Users/jayantakumarpanda/eclipse-workspace/AddressesCRUDOnSortlyUIAutomation"
-							+ "/src/main/java/com/sortly/qa/config/config.properties");
+					"\\Users\\Admin\\eclipse-workspace\\AddressesCRUDOnSortlyUIAutomation\\src\\main\\java\\com\\sortly\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -53,15 +52,15 @@ public class BaseTest {
 		String browserName = prop.getProperty("browser");
 
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "/Users/jayantakumarpanda/Downloads/chromedriver-mac-x64/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "C:\\Automation\\chromedriver-win64\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "/Users/jayantakumarpanda/Downloads/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "C:\\Automation\\chromedriver-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equals("Edge")){
-			System.setProperty("webdriver.edge.driver", "/Users/jayantakumarpanda/Downloads/edgedriver");
+			System.setProperty("webdriver.edge.driver", "C:\\Automation\\chromedriver-win64\\edgeodriver.exe");
 			driver = new EdgeDriver();
 		}
 

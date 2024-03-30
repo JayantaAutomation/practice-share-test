@@ -5,8 +5,10 @@
     <classes>
       <class name="com.sortly.qa.testcases.LoginPageTest">
         <methods>
+          <include name="loginPageTitleTest"/>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="loginTestTeamMember"/>
+          <include name="loginTestOwner"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.sortly.qa.testcases.LoginPageTest -->
